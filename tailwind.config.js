@@ -9,16 +9,21 @@ export default {
         './vendor/laravel/jetstream/**/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
-        './resources/js/**/*.vue',
+        './resources/js/**/*.vue'
     ],
 
     theme: {
         extend: {
-            fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+            colors: {
+                'black': '#131011'
             },
-        },
+            fontFamily: {
+                sans: ['Figtree', ...defaultTheme.fontFamily.sans]
+            }
+        }
     },
 
     plugins: [forms, typography],
+
+    darkMode: 'selector'
 };
